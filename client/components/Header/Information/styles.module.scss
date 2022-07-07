@@ -1,0 +1,272 @@
+.container {
+  min-height: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  padding: 0 100px;
+
+  background: rgba(164, 229, 227, 0.2);
+}
+
+.geolocation-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 62px;
+
+  cursor: pointer;
+}
+
+.geolocation-block_city {
+  margin-left: 2px;
+
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.phone-block {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0 100px 0 auto;
+
+  cursor: pointer;
+}
+
+.phone-block_number {
+  display: block;
+
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+.phone-block_description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.geolocationIcon {
+  width: 20px;
+  height: 20px;
+  display: none;
+}
+
+.modal {
+  width: 400px;
+}
+
+.area-item {
+  padding: 8px 16px;
+  margin-bottom: 14px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+
+  &:hover {
+    background: #e7e7e7;
+  }
+
+  &:active {
+    background: #e7e7e7;
+  }
+}
+
+.area-item_active {
+  text-decoration: underline;
+  font-weight: 500;
+  background: #e7e7e7;
+}
+
+.basket {
+  display: none !important;
+}
+
+.profileIcon {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.profileModal {
+  width: 400px !important;
+  height: auto !important;
+}
+
+.profileModal_content {
+  width: 400px !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profileModal_content-user {
+  width: inherit;
+  margin-bottom: auto;
+
+  font-size: 16px;
+
+  span {
+    word-break: break-all;
+
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.profileModal_content_button-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.profileModal_content_avatarIcon {
+  width: 180px;
+  height: 180px;
+  margin-bottom: 24px;
+}
+
+.profileModal_content_exit {
+  background: none;
+  border: 2px solid #269e9c;
+  color: #269e9c;
+}
+
+.profileModal_content-user {
+  margin-bottom: auto;
+
+  font-size: 16px;
+
+  span {
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 12px;
+
+  button {
+    min-width: 180px;
+  }
+}
+
+.admin-button {
+  min-width: 180px;
+  margin: 12px 0 0 auto;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+.catalog-icon {
+  width: 24px;
+  height: 24px;
+  display: none;
+  margin-right: 12px;
+
+  cursor: pointer;
+}
+
+@media (max-width: 1430px) {
+  .geolocation-block {
+    margin-left: 10px;
+  }
+
+  .phone-block {
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 1300px) {
+  .phone-block_description {
+    display: none;
+  }
+}
+
+@media (max-width: 1240px) {
+  .container {
+    padding: 20px 100px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .phone-block {
+    margin-left: auto;
+  }
+
+  .button {
+    display: none;
+  }
+}
+
+@media (max-width: 830px) {
+  .container {
+    padding: 20px 100px;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  .geolocationIcon {
+    display: block;
+    margin-left: auto;
+
+    cursor: pointer;
+  }
+
+  .geolocation-block {
+    display: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .phone-block {
+    display: none;
+  }
+
+  .basket {
+    flex-grow: 0 !important;
+    display: block !important;
+  }
+
+  .container {
+    padding: 20px 30px 20px 10px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo {
+    display: block;
+  }
+
+  .catalog-icon {
+    display: block;
+  }
+
+  .container {
+    min-height: 64px;
+    padding: 0 30px 0 10px;
+    gap: 10px;
+
+    & > div:first-of-type {
+      display: none;
+    }
+  }
+}

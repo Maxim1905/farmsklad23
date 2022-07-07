@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  align-items: center;
+  padding: 22px 100px 32px 100px;
+}
+
+@media (max-width: 750px) {
+  .container {
+    padding: 22px 40px 32px 40px;
+  }
+
+  .basket {
+    display: none !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 25px 10px;
+  }
+}

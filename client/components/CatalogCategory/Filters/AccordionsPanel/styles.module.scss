@@ -1,0 +1,31 @@
+.container {
+  border-bottom: solid 1px #dfdfdf;
+}
+
+.accordion-item {
+  overflow: hidden;
+  transition: max-height 0.3s cubic-bezier(1, 0, 1, 0);
+  height: auto;
+  max-height: 9999px;
+}
+
+.accordion-item.collapsed {
+  max-height: 0;
+  transition: max-height 0.35s cubic-bezier(0, 1, 0, 1);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 24px 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 24px;
+}
+
+.accordion-content {
+  padding-bottom: 42px;
+}

@@ -1,0 +1,73 @@
+.basket-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-grow: 2;
+
+  cursor: pointer;
+}
+
+.basket-counter {
+  position: relative;
+}
+
+.basket-counter-badge {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: -11px;
+  left: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  background: #269e9c;
+  border-radius: 9.5px;
+}
+
+.basket-sum {
+  margin-left: 30px;
+
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  span {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: #269e9c;
+  }
+}
+
+.basket-icon {
+  width: 37px;
+  height: 43px;
+}
+
+@media (max-width: 1000px) {
+  .basket-sum {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .basket-counter-badge {
+    width: 17px;
+    height: 17px;
+    top: -8px;
+    left: 15px;
+
+    font-weight: 500;
+    font-size: 8px;
+  }
+
+  .basket-icon {
+    width: 21px;
+    height: 24px;
+  }
+}

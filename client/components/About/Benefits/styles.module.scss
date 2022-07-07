@@ -1,0 +1,56 @@
+.tagline {
+  margin-bottom: 90px;
+  padding: 0 340px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+
+.benefits {
+  display: grid;
+  grid-template-columns: 470px 470px;
+  justify-content: space-around;
+  row-gap: 54px;
+  margin-bottom: 120px;
+}
+
+.benefit {
+  display: flex;
+
+  p {
+    margin: 10px 0 0 15px;
+
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 28px;
+  }
+}
+
+.benefit-image {
+  width: 49px;
+  height: 49px;
+}
+
+@media (max-width: 1100px) {
+  .benefits {
+    grid-template-columns: auto;
+    padding: 0 20px;
+  }
+
+  .tagline {
+    padding: 0 40px;
+  }
+
+  .benefit {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .tagline {
+    text-align: left;
+    padding: 0 20px;
+  }
+}

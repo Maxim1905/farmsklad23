@@ -1,0 +1,104 @@
+.container {
+}
+
+.title {
+  margin: 0 0 80px 100px;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+
+  span {
+    margin-left: 32px;
+
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #269e9c;
+  }
+}
+
+.content {
+  display: flex;
+  padding: 0 100px 70px 100px;
+}
+
+.products {
+  width: 100%;
+}
+
+.medicines {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  column-gap: 15px;
+  row-gap: 30px;
+}
+
+.show-more {
+  margin: 36px 0 70px 0;
+  text-align: center;
+}
+
+.show-more_button {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #269e9c;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.filters-mobile {
+  position: relative;
+  display: none;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.filters-mobile_title {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  &:hover {
+    background: #eee7f363;
+  }
+}
+
+@media (max-width: 1630px) {
+  .medicines {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 830px) {
+  .filters-wrapper {
+    display: none;
+  }
+
+  .content {
+    padding: 0 10px;
+  }
+
+  .filters-mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 640px) {
+  .title {
+    margin-left: 0;
+
+    text-align: center;
+  }
+}

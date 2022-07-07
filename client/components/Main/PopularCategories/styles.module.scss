@@ -1,0 +1,21 @@
+.container {
+  padding: 80px 100px;
+}
+
+.title {
+  margin-bottom: 55px;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 40px 0;
+  }
+
+  .title {
+    margin-left: 10px;
+  }
+}

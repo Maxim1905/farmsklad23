@@ -1,0 +1,113 @@
+.container {
+  padding: 0 100px 78px 100px;
+}
+
+.title {
+  margin-bottom: 50px;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.subtitle {
+  max-width: 527px;
+  display: block;
+  margin-bottom: 35px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.search {
+  margin-bottom: 100px;
+
+  input {
+    width: 440px;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.submit-button {
+  width: 304px;
+  height: 35px;
+  margin-bottom: 120px;
+}
+
+.user-data {
+  margin: 30px 0 43px 0;
+
+  input {
+    width: 305px;
+    height: 35px;
+  }
+
+  input:not(:last-of-type) {
+    margin-bottom: 18px;
+  }
+}
+
+.explanation {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 0 20px 78px 20px;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    padding: 0 10px 78px 10px;
+  }
+
+  .medicine-name {
+    width: 300px;
+  }
+}
+
+@media (max-width: 370px) {
+  .container {
+    padding: 0 10px 78px 10px;
+  }
+
+  .medicine-name {
+    width: 270px;
+  }
+}
+@media (max-width: 540px) {
+  .container {
+    padding: 0 5px 78px 5px;
+  }
+
+  .medicine-name {
+    width: 300px;
+  }
+
+  .user-data {
+    input {
+      width: 250px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .submit-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .medicine-name {
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

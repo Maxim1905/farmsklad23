@@ -1,0 +1,69 @@
+.title {
+  margin: 0 0 62px 100px;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  gap: 70px;
+  margin: 90px 0 60px 0;
+  padding-left: 100px;
+}
+
+.text {
+  flex: 3;
+}
+
+.illustration {
+  height: 744px;
+  flex: 4;
+}
+
+.mokkHelpfullImage {
+  height: 744px;
+}
+
+@media (max-width: 1000px) {
+  .mokkHelpfullImage {
+    height: 500px;
+  }
+}
+
+@media (max-width: 760px) {
+  .mokkHelpfullImage {
+    height: 360px;
+  }
+
+  .illustration {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 400px;
+    filter: opacity(20%);
+  }
+
+  .content {
+    padding: 0 10px;
+  }
+
+  .title {
+    margin: 0 10px 20px 10px;
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 560px) {
+  .mokkHelpfullImage {
+    height: 260px;
+  }
+
+  .content {
+    margin-top: 20px;
+  }
+}

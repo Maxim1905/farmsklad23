@@ -1,0 +1,252 @@
+.container {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 1.5fr 1fr;
+  grid-template-rows: 1fr 0.3fr auto 0.1fr;
+  grid-template-areas:
+    "receiving yourOrder"
+    "map yourOrder"
+    "map addresses"
+    "map actionsBlock";
+
+  padding: 40px 0 90px 0;
+  overflow: auto;
+}
+
+.mapblock {
+  width: 100%;
+
+  background: #f6f6f6;
+  border: 1px solid rgba(164, 229, 227, 0.2);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3),
+    -1px -1px 2px rgba(231, 231, 231, 0.5),
+    inset -2px 2px 4px rgba(231, 231, 231, 0.2),
+    inset 2px -2px 4px rgba(231, 231, 231, 0.2),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.9),
+    inset 2px 2px 5px rgba(231, 231, 231, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+  grid-area: map;
+}
+
+.title {
+  display: inline-block;
+  padding-bottom: 24px;
+  margin-bottom: 24px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  border-bottom: 1px solid #c4c4c4;
+}
+
+.text-large {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.text-medium {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.text-small {
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+}
+
+.delivery-option {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-of-type) {
+    margin-bottom: 25px;
+  }
+}
+
+.delivery-option_price {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.gray-wrapper,
+.your-order,
+.addresses,
+.receiving {
+  padding: 40px 30px 40px 70px;
+
+  background: #f6f6f6;
+  border: 1px solid rgba(164, 229, 227, 0.2);
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3),
+    -1px -1px 2px rgba(231, 231, 231, 0.5),
+    inset -2px 2px 4px rgba(231, 231, 231, 0.2),
+    inset 2px -2px 4px rgba(231, 231, 231, 0.2),
+    inset -2px -2px 4px rgba(255, 255, 255, 0.9),
+    inset 2px 2px 5px rgba(231, 231, 231, 0.9);
+  backdrop-filter: blur(12px);
+  border-radius: 10px;
+}
+
+.your-order {
+  grid-area: yourOrder;
+}
+
+.receiving {
+  grid-area: receiving;
+}
+
+.addresses {
+  overflow: "auto";
+  grid-area: addresses;
+}
+
+.outline-button {
+  border: 1px solid #269e9c;
+  background: none;
+  color: #242424;
+}
+
+.button-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  span {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+
+    &:first-child {
+      color: #ffffff;
+    }
+  }
+
+  svg {
+    position: absolute;
+
+    &:first-child {
+      left: 50%;
+      transform: translateX(-200%);
+    }
+
+    &:last-child {
+      right: 50%;
+      transform: translateX(200%);
+    }
+  }
+}
+
+.button-image {
+  position: absolute;
+}
+
+.address-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 27px;
+
+  &:not(:last-of-type) {
+    padding-bottom: 14px;
+
+    border-bottom: 1px solid #c4c4c4;
+  }
+
+  button {
+    min-width: 115px;
+    height: 35px;
+  }
+}
+
+.address-item_info {
+  display: flex;
+  flex-direction: column;
+
+  span:not(:last-of-type) {
+    margin-bottom: 6px;
+  }
+}
+
+.address-item_info-location {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.address-item_info-available {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 11px;
+  letter-spacing: 0.03em;
+  color: #269e9c;
+}
+
+.actions-block {
+  display: flex;
+  gap: 16px;
+  padding: 0 16px;
+  grid-area: actionsBlock;
+
+  button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1050px) {
+  .mapblock {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 0.3fr auto 0.1fr;
+    grid-template-areas:
+      "receiving"
+      "yourOrder"
+      "addresses"
+      "actionsBlock";
+  }
+
+  .actions-block {
+    justify-content: space-around;
+    padding: 0;
+    gap: 8px;
+
+    button {
+      min-width: unset;
+      width: 146px;
+    }
+  }
+
+  .address-item {
+    gap: 8px;
+    flex-direction: column;
+
+    button {
+      min-width: unset;
+      width: 115px;
+    }
+  }
+
+  .gray-wrapper {
+    padding: 40px 10px 40px 10px;
+  }
+
+  .your-order {
+    padding: 40px 10px 40px 10px;
+  }
+
+  .receiving {
+    padding: 40px 10px 40px 10px;
+  }
+
+  .addresses {
+    padding: 40px 10px 40px 10px;
+  }
+}

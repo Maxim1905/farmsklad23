@@ -1,0 +1,87 @@
+.container {
+  padding: 80px 100px;
+}
+
+.title {
+  margin-bottom: 55px;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 447px));
+  justify-content: space-between;
+  row-gap: 36px;
+  column-gap: 24px;
+}
+
+.description {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+.bonus-card {
+  font-weight: 500;
+  font-size: 22px;
+}
+
+@media screen and (max-width: 1590px) {
+  .content {
+    grid-template-columns: repeat(auto-fill, 380px);
+
+    div > div:first-of-type {
+      width: 380px;
+    }
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .content {
+    grid-template-columns: repeat(auto-fill, 320px);
+
+    div > div:first-of-type {
+      width: 320px;
+      height: 230px;
+    }
+  }
+}
+
+@media screen and (max-width: 1208px) {
+  .content {
+    justify-content: center;
+
+    div > div:first-of-type {
+      width: 320px;
+      height: 200px;
+    }
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .container {
+    padding: 80px 20px;
+  }
+
+  .content {
+    justify-content: space-between;
+    gap: 8px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .container {
+    padding: 26px 0 12px 0;
+  }
+
+  .content {
+    justify-content: center;
+  }
+
+  .title {
+    margin-left: 10px;
+  }
+}

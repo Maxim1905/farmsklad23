@@ -1,0 +1,313 @@
+.content {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 200px 0 100px;
+}
+
+.stepper-wrapper {
+  height: 156px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 120px;
+
+  background: #edfaf9;
+}
+
+.note {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 21px;
+  color: #7b7b7b;
+}
+
+.image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.title-block {
+  display: inline-block;
+}
+
+.pickup-only {
+  width: 157px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0 50px auto;
+
+  background: #f7c206;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.cashback {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #269e9c;
+}
+
+.price-block {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 26px;
+}
+
+.info-block {
+  display: flex;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.info-in-stock {
+  margin-left: 16px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.info-description {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.busket-button {
+  margin-top: 25px;
+}
+
+.busket-block {
+  padding-bottom: 60px;
+
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.description {
+}
+
+.medicineImage {
+  width: 465px;
+  height: 465px;
+  margin-right: 32px;
+}
+
+.certificate {
+  width: 285px;
+  height: 400px;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 15px;
+  margin: 25px 0 76px 0;
+}
+
+.info-row {
+  display: flex;
+}
+
+.info-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.info-title {
+  margin-right: 8px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: #7b7b7b;
+}
+
+.accordion-content {
+  margin-left: 29px;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.instruction {
+  display: grid;
+  grid-template-columns: auto auto;
+  row-gap: 15px;
+  column-gap: 110px;
+  padding: 0 100px;
+  margin-bottom: 100px;
+}
+
+.instruction-title {
+  margin: 70px 0 60px 0;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+.instruction-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.location-name {
+  margin-right: 50px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.price-value {
+  display: flex;
+}
+
+.location-address {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.certificates-container {
+  padding: 63px 100px 100px 100px;
+  background: #edfaf9;
+}
+
+.certificates {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 33px;
+}
+
+.certificates-title {
+  margin-bottom: 50px;
+
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+}
+
+@media (max-width: 1110px) {
+  .info-block {
+    margin-left: 0;
+  }
+
+  .content {
+    padding: 0 100px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .medicineImage {
+    width: 332px;
+    height: 332px;
+  }
+
+  .instruction {
+    grid-template-columns: auto;
+  }
+
+  .certificates {
+    grid-template-columns: auto;
+  }
+}
+
+@media (max-width: 840px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .note {
+    margin-bottom: 40px;
+  }
+
+  .medicineImage {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .price-block {
+    justify-content: center;
+  }
+
+  .counter {
+    width: 100px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .busket-button {
+    margin: 25px auto;
+  }
+}
+
+@media (max-width: 520px) {
+  .stepper-wrapper {
+    height: auto;
+    padding: 16px 0;
+  }
+
+  .instruction {
+    padding: 0 20px;
+  }
+
+  .certificates-container {
+    padding: 20px;
+  }
+
+  .certificates-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .content {
+    padding: 0 40px;
+  }
+
+  .info-description {
+    font-size: 12px;
+  }
+
+  .info-title {
+    font-size: 12px;
+  }
+
+  .title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .image-wrapper {
+    align-items: center;
+  }
+}

@@ -1,0 +1,33 @@
+.image {
+  height: 590px;
+}
+
+@media (max-width: 1480px) {
+  .image {
+    height: 500px;
+  }
+}
+
+@media (max-width: 1270px) {
+  .image {
+    height: 440px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .image {
+    height: 360px;
+  }
+}
+
+@media (max-width: 840px) {
+  .image {
+    height: 300px;
+  }
+}
+
+@media (max-width: 560px) {
+  .image {
+    height: 192px;
+  }
+}

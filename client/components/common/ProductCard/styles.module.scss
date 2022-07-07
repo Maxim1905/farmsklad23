@@ -1,0 +1,113 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  padding: 26px 38px;
+
+  background: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: all 0.4s;
+
+  &:hover {
+    box-shadow: 2px 2px 14px rgba(38, 158, 156, 0.3);
+  }
+}
+
+.title {
+  margin: 20px 0 auto 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.company {
+  margin: 20px 0;
+
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.info-block {
+  position: relative;
+
+  cursor: pointer;
+
+  &:hover {
+    transition: all 0.4s;
+
+    span {
+      opacity: 1;
+    }
+  }
+}
+
+.info-text {
+  position: absolute;
+  width: 160px;
+  height: 90px;
+  padding: 15px;
+  bottom: 100%;
+
+  background: #ffffff;
+  box-shadow: 4px 4px 15px rgba(38, 158, 156, 0.3);
+  border-radius: 10px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  transition: all 0.4s;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.medicine-image {
+  width: 241px;
+  height: 241px;
+  margin: 0 auto;
+}
+
+.min-price {
+  margin-right: 10px;
+
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.count-actions {
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.count-value {
+  margin: 0 8px;
+
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+}
+
+.count-button {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ffffff 0%, #e9e9e9 100%);
+  box-shadow: 50px 50px 100px rgba(224, 224, 224, 0.2),
+    -50px -50px 100px rgba(224, 224, 224, 0.2),
+    50px -50px 100px rgba(255, 255, 255, 0.9),
+    -50px 50px 125px rgba(224, 224, 224, 0.9),
+    inset -2px 2px 2px rgba(255, 255, 255, 0.3),
+    inset 2px -2px 2px rgba(224, 224, 224, 0.5);
+}

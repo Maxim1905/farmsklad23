@@ -1,0 +1,38 @@
+.link-title {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+}
+
+.catalog-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0 100px 40px 100px;
+}
+
+.image-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 750px) {
+  .links {
+    padding: 0 20px 40px 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}

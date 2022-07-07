@@ -1,0 +1,18 @@
+.container {
+  flex: 8;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 400px));
+  justify-content: center;
+  gap: 50px;
+  padding: 0 80px;
+}
+
+.image {
+  height: 600px;
+}
+
+@media (max-width: 500px) {
+  .image {
+    height: 450px;
+  }
+}
