@@ -1,0 +1,30 @@
+{
+  "name": "nextjs-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cnbuilder": "^3.1.0",
+    "jwt-decode": "^3.1.2",
+    "next": "12.1.6",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-slick": "^0.29.0",
+    "react-yandex-maps": "^4.6.0",
+    "sass": "^1.51.0",
+    "slick-carousel": "^1.8.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.33",
+    "@types/react": "^18.0.9",
+    "eslint": "8.15.0",
+    "eslint-config-next": "12.1.6",
+    "typescript": "^4.6.4"
+  }
+}
