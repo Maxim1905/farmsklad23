@@ -17,6 +17,9 @@ const CreateCategoryModal = ({isOpen, onClose}) => (
 
         const {name} = event.target as any;
 
+        if (!name.value)
+          return alert("Название категории не может быть пстой строкой");
+
         createType({name: name.value})
           .then((data) => {
             alert(`Успешное создание категории ${data.name}`);
