@@ -6,7 +6,7 @@ module.exports = new Sequelize(
 	process.env.DB_USER, // имя пользователя
 	process.env.DB_PASSWORD, // пароль бд
 	{
-		dialect: 'postgres',
+		dialect: 'mysql',
 		port: process.env.DB_PORT,
 		host: process.env.DB_HOST,
 	}
@@ -15,9 +15,5 @@ module.exports = new Sequelize(
 
 
 
-// module.exports = new Sequelize('default-db', 'default-db', 'Americano-1900', {
-// 	host: 'clohegeyaf.beget.app',
-// 	port: 3306,
-// 	dialect: 'mysql',
-// });
+
 
