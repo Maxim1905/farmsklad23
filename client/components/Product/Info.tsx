@@ -1,14 +1,14 @@
 import styles from "./styles.module.scss";
 
 type infoProps = {
-  activeSubstance: string;
-  country: string;
-  dosage: string;
-  expirationDate: string;
-  methodOfApplication: string;
-  manufacturer: string;
-  releaseForm: string;
-  storageConditions: string;
+  activeSubstance?: string;
+  country?: string;
+  dosage?: string;
+  expirationDate?: string;
+  methodOfApplication?: string;
+  manufacturer?: string;
+  releaseForm?: string;
+  storageConditions?: string;
 };
 
 const Info = ({
